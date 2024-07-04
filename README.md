@@ -129,7 +129,7 @@ If you are using a shell other than bash, replace bash with your specific shell 
 To get started with SuperCoder, follow these steps:
 
 1. Open your terminal and clone the SuperCoder repository:
-   ```
+   ```bash
    git clone https://github.com/TransformerOptimus/SuperCoder.git
    cd SuperCoder
    ```
@@ -138,14 +138,14 @@ To get started with SuperCoder, follow these steps:
    Create a .envrc file in the root directory of your project and populate it with the necessary environment variables:
    ```bash
    export AI_DEVELOPER_GITNESS_TOKEN=
-   export AI_DEVELOPER_GITNESS_URL=https://gitness:3000
+   export AI_DEVELOPER_GITNESS_URL=http://gitness:3000
    export AI_DEVELOPER_GITNESS_HOST=gitness:3000
    export AI_DEVELOPER_GITNESS_USER=
    export AI_DEVELOPER_OPENAI_API_KEY=
    export AI_DEVELOPER_WORKSPACE_WORKING_DIR=/workspaces
    export AI_DEVELOPER_WORKSPACE_TEMPLATE_DIR=/templates/python
    export AI_DEVELOPER_WORKSPACE_SERVICE_ENDPOINT=http://ws:8080
-   export AI_DEVELOPER_APP_URL=
+   export AI_DEVELOPER_APP_URL=http://localhost:3000
    export AI_DEVELOPER_GITNESS_PASSWORD=admin
    export AI_DEVELOPER_GITNESS_USER=admin
    export AI_DEVELOPER_GITHUB_CLIENT_SECRET=
@@ -183,18 +183,18 @@ To get started with SuperCoder, follow these steps:
 ## Running the Application
 
 1. Start the Go server and related services (if not already running):
-   ```
+   ```bash
    docker-compose up
    ```
 
 2. Start the Flask backend:
-   ```
+   ```bash
    cd react-native-flask/backend
    flask run
    ```
 
 3. In a new terminal, start the React Native frontend:
-   ```
+   ```bash
    cd react-native-flask/frontend
    expo start
    ```

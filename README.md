@@ -231,6 +231,12 @@ Remember to keep all necessary services running during development for full func
 ## License
 [License information will be added here]
 
+## 📚 Resources
+
+* [How to get started](https://superagi.com/get-started-with-supercoder/)
+* [SuperCoder Blogs](https://superagi.com/blog/)
+* [YouTube Channel](https://www.youtube.com/@_SuperAGI/videos)
+
 ### 📖 Need Help?
 
 Join our [Discord community](https://discord.gg/pmFVyCDDyH) for support and discussions.

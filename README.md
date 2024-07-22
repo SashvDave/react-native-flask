@@ -99,7 +99,7 @@ SuperCoder supports a variety of languages and frameworks for diverse developmen
 
 ### Prerequisites
 Before you proceed, ensure that you have the following installed on your system:
-- Docker and Docker Compose
+- [Docker and Docker Compose](https://docs.docker.com/get-docker/)
 - `direnv`
 - Node.js (v14 or later)
 - Python (v3.10 or later)
@@ -158,7 +158,15 @@ To get started with SuperCoder, follow these steps:
 
    export WORKSPACES_GITNESS_USER=
    export WORKSPACES_GITNESS_TOKEN=
+
+   # For using Amazon S3 to store images for the Design Section
+   export AI_DEVELOPER_AWS_ACCESS_KEY_ID=
+   export AI_DEVELOPER_AWS_SECRET_ACCESS_KEY=
+   export AI_DEVELOPER_AWS_BUCKET_NAME=
+   export AI_DEVELOPER_AWS_REGION=
    ```
+
+   Ensure you fill in the appropriate values for your credentials and settings.
 
 3. Allow direnv to load these settings:
    ```bash

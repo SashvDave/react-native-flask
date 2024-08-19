@@ -48,7 +48,59 @@ This project integrates a React Native frontend with a Flask backend, creating a
 6. Set up CI/CD pipeline for automated testing and deployment
 
 ## Getting Started
-[Instructions for setting up and running the project will be added here]
+
+### Prerequisites
+- Node.js (v14 or later)
+- Python (v3.10 or later)
+- Poetry (for Python dependency management)
+- Expo CLI
+
+### Setup
+
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd react-native-flask
+   ```
+
+2. Set up the Flask backend:
+   ```
+   cd backend
+   poetry install
+   poetry shell
+   flask db upgrade
+   ```
+
+3. Set up the React Native frontend:
+   ```
+   cd ../frontend
+   npm install
+   ```
+
+### Running the Application
+
+1. Start the Flask backend:
+   ```
+   cd backend
+   flask run
+   ```
+
+2. In a new terminal, start the React Native frontend:
+   ```
+   cd frontend
+   expo start
+   ```
+
+3. Use the Expo Go app on your mobile device or an emulator to run the application.
+
+### Development
+
+- Flask backend runs on `http://localhost:5000`
+- React Native frontend uses Expo for development
+- Modify `app.py` for backend changes
+- Edit React Native components in the `frontend/src` directory
+
+Remember to keep both the backend and frontend running during development for full functionality.
 
 ## Contributing
 [Guidelines for contributing to the project will be added here]

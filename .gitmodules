@@ -1,0 +1,3 @@
+[submodule "workspace-service/templates/react-native-flask"]
+	path = workspace-service/templates/react-native-flask
+	url = https://github.com/FlemingVincent/expo-supabase-starter

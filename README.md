@@ -67,6 +67,16 @@
 
 SuperCoder is an autonomous software development system that leverages advanced AI tools and agents to streamline and automate coding, testing, and deployment tasks, enhancing efficiency and reliability. It combines a Go server with a Next.js based GUI and integrates a React Native frontend with a Flask backend, creating a powerful full-stack mobile application foundation.
 
+### React Native Flask Integration
+
+SuperCoder now supports the integration of React Native with Flask, providing a robust full-stack mobile application foundation. This integration combines the flexibility and performance of React Native for the mobile interface with the simplicity and power of Flask for the server-side logic.
+
+#### Key Features:
+- Flask backend with SQLite database and SQLAlchemy ORM
+- React Native frontend based on the expo-supabase-starter template
+- Seamless integration between frontend and backend
+- Easy setup and deployment process
+
 ## 🛠 Supported Languages & Frameworks
 
 SuperCoder supports a variety of languages and frameworks for diverse development needs:
@@ -100,11 +110,11 @@ SuperCoder supports a variety of languages and frameworks for diverse developmen
 ### Prerequisites
 Before you proceed, ensure that you have the following installed on your system:
 - [Docker and Docker Compose](https://docs.docker.com/get-docker/)
-- `direnv`
-- Node.js (v14 or later)
-- Python (v3.10 or later)
-- Poetry (for Python dependency management)
-- Expo CLI
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [Python](https://www.python.org/) (v3.10 or later)
+- [Poetry](https://python-poetry.org/) (for Python dependency management)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- `direnv` (for environment variable management)
 
 ### Installing Direnv
 To handle environment variables more efficiently, install `direnv`:
@@ -118,6 +128,7 @@ sudo apt-get install direnv
 
 After installation, hook direnv into your shell:
 
+<<<<<<< HEAD
 ```bash
 echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
 source ~/.bashrc

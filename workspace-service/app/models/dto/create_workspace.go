@@ -8,4 +8,5 @@ type CreateWorkspace struct {
 	BackendTemplate  *string `json:"backendTemplate,omitempty"`
 	GitnessUserName  string  `json:"gitnessUserName,omitempty"`
 	GitnessToken     string  `json:"gitnessToken,omitempty"`
+	FullStackTemplate *string `json:"fullStackTemplate,omitempty"`
 }

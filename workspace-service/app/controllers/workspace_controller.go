@@ -21,7 +21,16 @@ func (wc *WorkspaceController) CreateWorkspace(c *gin.Context) {
 		})
 		return
 	}
-	wsDetails, err := wc.wsService.CreateWorkspace(body.WorkspaceId, *body.BackendTemplate, body.FrontendTemplate, body.RemoteURL, body.GitnessUserName, body.GitnessToken)
+
+	var wsDetails interface{}
+	var err error
+
+	if body.Template == "react-native-flask" {
+		wsDetails, err = wc.wsService.CreateReactNativeFlaskWorkspace(body.WorkspaceId, body.RemoteURL, body.GitnessUserName, body.GitnessToken)
+	} else {
+		wsDetails, err = wc.wsService.CreateWorkspace(body.WorkspaceId, *body.BackendTemplate, body.FrontendTemplate, body.RemoteURL, body.GitnessUserName, body.GitnessToken)
+	}
+
 	if err != nil {
 		c.AbortWithStatusJSON(
 			500,
@@ -75,7 +84,6 @@ func (wc *WorkspaceController) DeleteWorkspace(c *gin.Context) {
 		200,
 		gin.H{"message": "success"},
 	)
-
 }
 
 func NewWorkspaceController(
